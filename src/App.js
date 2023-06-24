@@ -5,7 +5,7 @@ const App = () => {
   return (
     <Fragment>
       <Suspense fallback={<p>Loading....</p>}>
-        <List>
+        <List />
       </Suspense>
     </Fragment>
   );
