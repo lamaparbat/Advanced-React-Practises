@@ -1,8 +1,9 @@
 import { useFetchData } from "../hooks/index";
 
-const List = () => {
+const ListCustomHooks = () => {
+  // using custom hooks
   const { data, isLoading, error } = useFetchData({
-    url: "https://jsonplaceholder.typicode.com/todos",
+    url: `${process.env.REACT_APP_BASE_URL}/todos`,
   });
 
   return (
@@ -13,4 +14,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default ListCustomHooks;

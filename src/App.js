@@ -1,11 +1,18 @@
 import { Fragment, Suspense } from "react";
-import List from "./component/List";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+import ListReactQuery from "./component/List_ReactQuery";
 
 const App = () => {
+  const queryClient = new QueryClient();
+
   return (
     <Fragment>
       <Suspense fallback={<p>Loading....</p>}>
-        <List />
+        <QueryClientProvider client={queryClient}>
+          <ListReactQuery />
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
       </Suspense>
     </Fragment>
   );

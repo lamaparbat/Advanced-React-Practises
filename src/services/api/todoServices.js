@@ -1,6 +1,7 @@
-import { HTTP } from "../HTTP"
-
+import { HTTP } from "../HTTP";
 
 export const getTodos = async () => {
-    const data = await HTTP("");
-}
+  const { data } = await HTTP("get", "/todos");
+
+  return data ?? [];
+};
