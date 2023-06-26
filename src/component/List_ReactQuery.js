@@ -3,7 +3,8 @@ import { getTodos } from "../services/api/todoServices";
 
 const ListReactQuery = () => {
   const { data, isLoading, error } = useQuery(["todos"], getTodos, {
-    staleTime: 6000,
+    staleTime: 6000, // remain data stale for 6 seconds
+    retry: 10, // Will retry failed requests 10 times before displaying an error
   });
 
   return (
