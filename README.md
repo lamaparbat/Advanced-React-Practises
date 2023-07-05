@@ -4,5 +4,6 @@
   2. Suspense
   3. React-Query
   4. Custom Hooks
+  5. Memoization (useMemo, memo, useCallback)
   
 ```
