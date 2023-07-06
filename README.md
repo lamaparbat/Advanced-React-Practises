@@ -11,7 +11,11 @@
         - It is used to update the component state in response to an error occurring in any of its child components.
 
   2. Suspense
+     - Best of lazy loading and fallback ui before the async api call resolves.
+
   3. React-Query
+    - Prioritizing api calls with features like pre-made utility hooks like parallelFetching and caching.
+
   4. Custom Hooks
   5. Memoization (useMemo, memo, useCallback)
   
