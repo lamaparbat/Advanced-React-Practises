@@ -17,7 +17,13 @@
     - Prioritizing api calls with features like pre-made utility hooks like parallelFetching and caching.
 
   4. Custom Hooks
+    - utilizing built-in react hooks inside a function and used as a utility function
+
   5. Memoization (useMemo, memo, useCallback)
+    - resolve re-rendering issues
+
   6. React Portal
+    - creates a new top-level React tree and injects its children into it.
+    - necessary for proper styling (especially positioning)
   
 ```
