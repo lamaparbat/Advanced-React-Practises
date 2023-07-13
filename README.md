@@ -25,5 +25,6 @@
   6. React Portal
     - creates a new top-level React tree and injects its children into it.
     - necessary for proper styling (especially positioning)
+    - generally used when designing Popup Modal, Loading bar, or lightboxes
   
 ```
