@@ -18,5 +18,6 @@
 
   4. Custom Hooks
   5. Memoization (useMemo, memo, useCallback)
+  6. React Portal
   
 ```
