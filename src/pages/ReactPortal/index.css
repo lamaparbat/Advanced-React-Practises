@@ -1,0 +1,13 @@
+#model-container {
+  margin-top: 50px;
+  height: 70px;
+  background: red;
+  overflow: hidden;
+}
+
+.model {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  position: absolute;
+}
