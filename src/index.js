@@ -18,6 +18,7 @@ root.render(
           <Route path="/reactPortal" element={<ReactPortal />} />
         </Routes>
       </Router>
+      <div id="modal-renderer"></div>
     </ErrorBoundary>
   </StrictMode>
 );
