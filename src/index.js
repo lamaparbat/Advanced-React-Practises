@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
 import ErrorBoundary from "./component/ErrorBoundary";
 import ReactPortal from "./pages/ReactPortal";
+import CodeSnippet from "./pages/CodeSnippet";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -16,6 +17,7 @@ root.render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/reactPortal" element={<ReactPortal />} />
+          <Route path="/snippet" element={<CodeSnippet />} />
         </Routes>
       </Router>
       <div id="modal-renderer"></div>
