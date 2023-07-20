@@ -1,10 +1,17 @@
+import Snippet from "./Snippet.jsx";
+
 const CodeSnippet = () => {
-  const html = Prism.highlight(
-    "const a = 1;",
-    Prism.languages.javascript,
-    "javascript"
+  const jsCode = `
+   const fullName = "Parbat Lama";
+    
+   console.log(fullName);
+  `;
+
+  return (
+    <>
+      <Snippet code={jsCode} language="javascript" />
+    </>
   );
-  return html;
 };
 
 export default CodeSnippet;
