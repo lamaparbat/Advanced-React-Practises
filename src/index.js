@@ -6,7 +6,7 @@ import App from "./App";
 import ErrorBoundary from "./component/ErrorBoundary";
 import ReactPortal from "./pages/ReactPortal";
 import CodeSnippet from "./pages/CodeSnippet";
-import PdfConversion from "./pages/PdfConversion/";
+import PdfConversion from "./pages/pdfConversion";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
