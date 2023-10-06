@@ -7,6 +7,7 @@ import ErrorBoundary from "./component/ErrorBoundary";
 import ReactPortal from "./pages/ReactPortal";
 import CodeSnippet from "./pages/CodeSnippet";
 import PdfConversion from "./pages/pdfConversion";
+import UseDeferredHooks from "./pages/UseDeferredHooks";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -20,9 +21,10 @@ root.render(
           <Route path="/reactPortal" element={<ReactPortal />} />
           <Route path="/snippet" element={<CodeSnippet />} />
           <Route path="/pdfConversion" element={<PdfConversion />} />
+          <Route path="/useDeferredHooks" element={<UseDeferredHooks />} />
         </Routes>
       </Router>
       <div id="modal-renderer"></div>
     </ErrorBoundary>
-  </StrictMode>
+  </StrictMode>,
 );
