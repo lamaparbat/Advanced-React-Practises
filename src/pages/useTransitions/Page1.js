@@ -1,7 +1,3 @@
-
-
-export default function Page1 () {
-    return (
-        <h1>Non expensive page</h1>
-    )
+export default function AboutTab() {
+  return <p>Welcome to my profile!</p>;
 }
