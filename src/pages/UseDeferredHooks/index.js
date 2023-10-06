@@ -1,19 +1,13 @@
-const { useState, useEffect } = require("react");
-const { default: Lists } = require("./LIsts");
-import { comments } from "./constants";
+import Lists from "./Lists";
+import { useHandler } from "./useHandler";
 
 const UseDeferredHooks = () => {
-  const [searchKeyword, setSearchKeyword] = useState();
+  const { commentLists, searchKeyword, handleSearch } = useHandler();
 
-  useEffect(() => {}, [searchKeyword]);
-
-  const handleSearch = (e) => {
-    setSearchKeyword(e.target.value);
-  };
   return (
     <>
-      <input type="search" onChange={handleSearch} />
-      <Lists comments={comments} />
+      <input type="search" value={searchKeyword} onChange={handleSearch} />
+      <Lists comments={commentLists} />
     </>
   );
 };
