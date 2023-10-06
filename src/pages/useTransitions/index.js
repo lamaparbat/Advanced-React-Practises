@@ -4,8 +4,8 @@ import Page2 from "./Page2";
 import Page3 from "./Page3";
 
 const UseTransitionHooks = () => {
-  const [openTab, setOpenTab] = useState(0);
-  const [transition, setTransition] = useTransition();
+  const [openTab, setOpenTab] = useState(null);
+  const [pending, setTransition] = useTransition();
 
   const handleTabChange = (id) => {
     setTransition(() => {
@@ -16,14 +16,18 @@ const UseTransitionHooks = () => {
   return (
     <div>
       <div>
-        <button onClick={() => handleTabChange(1)}>Non Expensive Page</button>
-        <button onClick={() => handleTabChange(2)}>Expensive Page</button>
-        <button onClick={() => handleTabChange(3)}>Fix Expensive Page</button>
+        <button onClick={() => handleTabChange("page1")}>
+          Non Expensive Page
+        </button>
+        <button onClick={() => handleTabChange("page2")}>Expensive Page</button>
+        <button onClick={() => handleTabChange("page3")}>
+          Fix Expensive Page
+        </button>
       </div>
 
-      {openTab === 1 && <Page1 />}
-      {openTab === 2 && <Page2 />}
-      {openTab === 3 && <Page3 />}
+      {openTab === "page1" && <Page1 />}
+      {openTab === "page2" && <Page2 />}
+      {openTab === "page3" && <Page3 />}
     </div>
   );
 };
