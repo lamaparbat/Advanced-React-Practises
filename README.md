@@ -31,5 +31,7 @@
     - Code snippet formatter library
     - support multiple language formatting, font color and background themes
 
+  8. useDeferredValue()    [Unblock the user input from expensive func]
+    - Usefull when the search input is lagging becuase you pass the search value state to another component which has expensive calcualation.
   
 ```
