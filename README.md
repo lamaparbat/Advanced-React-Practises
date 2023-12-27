@@ -31,5 +31,7 @@
     - Code snippet formatter library
     - support multiple language formatting, font color and background themes
 
+  8. scroll animation using css only
+   - @keyframes, scroll()
   
 ```
