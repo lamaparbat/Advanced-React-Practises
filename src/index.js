@@ -8,6 +8,7 @@ import ReactPortal from "./pages/ReactPortal";
 import CodeSnippet from "./pages/CodeSnippet";
 import PdfConversion from "./pages/pdfConversion";
 import UseDeferredHooks from "./pages/UseDeferredHooks";
+import ScrollAnimation from "./pages/ScrollAnimation";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -22,6 +23,7 @@ root.render(
           <Route path="/snippet" element={<CodeSnippet />} />
           <Route path="/pdfConversion" element={<PdfConversion />} />
           <Route path="/useDeferredHooks" element={<UseDeferredHooks />} />
+          <Route path="/scrollAnimation" element={<ScrollAnimation />} />
         </Routes>
       </Router>
       <div id="modal-renderer"></div>

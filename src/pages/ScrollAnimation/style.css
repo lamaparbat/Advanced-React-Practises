@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.liner {
+  top: 0;
+  height: 10px;
+  width: 100%;
+  background: lime;
+  scale: 0 1;
+  position: fixed;
+  z-index: 9999;
+  animation: liner-animation linear;
+  animation-timeline: scroll();
+}
+
+@keyframes liner-animation {
+  to {
+    scale: 1 1;
+  }
+}
+
+.banner {
+  height: 100vh;
+  width: 100vw;
+  background: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .content {
+  width: 500px;
+}
+
+.banner2 {
+  height: 100vh;
+  width: 100vw;
+  background: url("https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner2 .content {
+  width: 500px;
+}
