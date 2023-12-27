@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .liner {
@@ -11,6 +12,7 @@ body {
   scale: 0 1;
   position: fixed;
   z-index: 9999;
+  transform-origin: left;
   animation: liner-animation linear;
   animation-timeline: scroll();
 }
@@ -30,8 +32,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.banner .content {
+.content {
+  padding: 20px;
   width: 500px;
+  background: white;
 }
 
 .banner2 {
@@ -43,6 +47,72 @@ body {
   justify-content: center;
   align-items: center;
 }
-.banner2 .content {
-  width: 500px;
+
+.banner3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner3 > img {
+  opacity: 0;
+  scale: 0.8;
+  animation: fadeIn linear;
+  animation-timeline: view();
+  /*   animation-range: entry contain; */
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.banner4 .cards {
+  display: flex;
+  gap: 5px;
+  animation: scrolling linear;
+  animation-timeline: view();
+  animation-range: 250px 800px;
+}
+
+.cards .card {
+  height: 50px;
+  width: 100px;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  display: grid;
+  place-content: center;
+}
+
+.banner4 {
+  background: blue;
+  display: flex;
+  justify-content: center;
+}
+.banner5 {
+  background: blue;
+  display: flex;
+  justify-content: center;
+}
+.banner5 .cards {
+  display: flex;
+  gap: 5px;
+  animation: scrolling-reverse linear;
+  animation-timeline: view();
+  animation-range: 250px 800px;
+}
+
+@keyframes scrolling {
+  to {
+    transform: translate(calc(100% - 0.01rem));
+  }
+}
+@keyframes scrolling-reverse {
+  to {
+    transform: translate(calc(-100% - 0.01rem));
+  }
 }
