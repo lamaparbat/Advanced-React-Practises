@@ -1,4 +1,4 @@
-# React-Advance
+# React Advance Practises
 ```
   1. Error Boundary [ComponentDidCatch || getDerivedStateFromError() ]
 
