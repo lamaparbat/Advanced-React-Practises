@@ -35,3 +35,29 @@
    - @keyframes, scroll()
   
 ```
+
+## Hooks
+  1. useDeferredValue()
+    Example: Suppose you are have input field, and
+      - has expensive task in onChange() event and
+      - has update the state after completing expensive task
+      - the state value is set in input field value
+     
+     Problem: You will see input type lagging because everytime u keep pressing keys, the expensive onChange event triggered and update the sate in view and re-render occurs
+     
+     Solution: To solve this issues, useDeferredValue() can be used where it is only used for view part, which works as like debounce and throttling technique.
+
+     ```
+            const  [name, setName] = useState(null);
+            const deferrredName = useDeferredValue(name);
+  
+            const handleChange =  (e) => {
+                for(let i =0;i<500;i++){console.log(i)}
+                setName(e.target.value)
+            }
+  
+           <>
+              <input type='text' value={name} onChange={handleChange} />
+              <span>{deferrredName}</span>
+           </>
+     ```
