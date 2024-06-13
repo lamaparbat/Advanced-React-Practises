@@ -6,6 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "axios": "^1.4.0",
+    "formik": "^2.4.6",
     "loader-utils": "3.2.1",
     "prismjs": "^1.29.0",
     "react": "18.2.0",
@@ -13,7 +14,8 @@
     "react-error-boundary": "^4.0.10",
     "react-query": "^3.39.3",
     "react-router-dom": "6.10.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

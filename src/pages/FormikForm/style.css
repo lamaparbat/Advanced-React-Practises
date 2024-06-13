@@ -1,0 +1,37 @@
+
+.formik-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formik-container-form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formik-container-form input , button{
+    padding: 10px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.error-label{
+    color: red;
+}
+
+.para_desc{
+    text-align: center;
+}
+
+.para_desc ul {
+    margin-top: -10px;
+}

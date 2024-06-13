@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import App from "./App";
+import FormikForm from "./pages/FormikForm";
 import ErrorBoundary from "./component/ErrorBoundary";
 import ReactPortal from "./pages/ReactPortal";
 import CodeSnippet from "./pages/CodeSnippet";
@@ -24,6 +25,7 @@ root.render(
           <Route path="/pdfConversion" element={<PdfConversion />} />
           <Route path="/useDeferredHooks" element={<UseDeferredHooks />} />
           <Route path="/scrollAnimation" element={<ScrollAnimation />} />
+          <Route path="/formik" element={<FormikForm />} />
         </Routes>
       </Router>
       <div id="modal-renderer"></div>
