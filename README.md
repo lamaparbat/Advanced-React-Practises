@@ -33,7 +33,23 @@
 
   8. scroll animation using css only
    - @keyframes, scroll()
+
+  9. Formik with Yup
+  - Formik
   
+    Pros
+      - Getting values in and out of form state
+      - Validation and error messages
+      - Handling form submission
+
+    Cons
+      - Re-render issues: When one field state change, entire form re-render.
+      - Not suitable if a form is large and field has expensive functions
+
+    Solution / Alternatives
+      - Use react-hook-form library
+
+    Yup - Form validaton schema library
 ```
 
 ## Hooks
