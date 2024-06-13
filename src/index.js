@@ -10,6 +10,7 @@ import CodeSnippet from "./pages/CodeSnippet";
 import PdfConversion from "./pages/pdfConversion";
 import UseDeferredHooks from "./pages/UseDeferredHooks";
 import ScrollAnimation from "./pages/ScrollAnimation";
+import ReactHookForm from "./pages/ReactHookForm";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -26,6 +27,7 @@ root.render(
           <Route path="/useDeferredHooks" element={<UseDeferredHooks />} />
           <Route path="/scrollAnimation" element={<ScrollAnimation />} />
           <Route path="/formik" element={<FormikForm />} />
+          <Route path="/react-hook-form" element={<ReactHookForm />} />
         </Routes>
       </Router>
       <div id="modal-renderer"></div>
